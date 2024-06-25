@@ -6,50 +6,83 @@ public class Params {
 	private int nbPlaces;
 	private String dateReservation;
 	private String typeReservation;
-	
-	/** Getter
+
+	public Params() {
+	}
+
+	public Params(String identifiantClient, int nbPlaces, String dateReservation, String typeReservation) {
+		this.identifiantClient = identifiantClient;
+		this.nbPlaces = nbPlaces;
+		this.dateReservation = dateReservation;
+		this.typeReservation = typeReservation;
+	}
+
+	/**
+	 * Getter
+	 * 
 	 * @return the identifiantClient
 	 */
 	public String getIdentifiantClient() {
 		return identifiantClient;
 	}
-	/** Setter
+
+	/**
+	 * Setter
+	 * 
 	 * @param identifiantClient the identifiantClient to set
 	 */
 	public void setIdentifiantClient(String identifiantClient) {
 		this.identifiantClient = identifiantClient;
 	}
-	/** Getter
+
+	/**
+	 * Getter
+	 * 
 	 * @return the nbPlaces
 	 */
 	public int getNbPlaces() {
 		return nbPlaces;
 	}
-	/** Setter
+
+	/**
+	 * Setter
+	 * 
 	 * @param nbPlaces the nbPlaces to set
 	 */
 	public void setNbPlaces(int nbPlaces) {
 		this.nbPlaces = nbPlaces;
 	}
-	/** Getter
+
+	/**
+	 * Getter
+	 * 
 	 * @return the dateReservation
 	 */
 	public String getDateReservation() {
 		return dateReservation;
 	}
-	/** Setter
+
+	/**
+	 * Setter
+	 * 
 	 * @param dateReservation the dateReservation to set
 	 */
 	public void setDateReservation(String dateReservation) {
 		this.dateReservation = dateReservation;
 	}
-	/** Getter
+
+	/**
+	 * Getter
+	 * 
 	 * @return the typeReservation
 	 */
 	public String getTypeReservation() {
 		return typeReservation;
 	}
-	/** Setter
+
+	/**
+	 * Setter
+	 * 
 	 * @param typeReservation the typeReservation to set
 	 */
 	public void setTypeReservation(String typeReservation) {
